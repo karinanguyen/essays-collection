@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `interface sémaphore`,
+    title: `Karina Nguyen`,
     description: `Blog`,
     author: `@karinanguyen`,
   },

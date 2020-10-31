@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
+// import Layout from "../components/layout"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 import Card from "../components/Card"
 
@@ -17,7 +17,7 @@ const IndexPage = () => (
        <Image />
         </div>*/}
       <Link to="https://www.karinanguyen.co/"><button>Learn my work</button></Link>
-      <svg width="100%" height="172" viewBox="0 0 2560 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="100%" height="182" viewBox="0 0 2560 172" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill="black">
           <animate repeatCount="indefinite" fill="freeze" 
           attributeName="d" dur="10s" 
@@ -34,10 +34,56 @@ const IndexPage = () => (
     </div>
 
     <div className="Cards">
-      <Card
-        title="Essay Categories"
-        text="12 sections"
-        image={require('../images/white.png')} />
+      <div className = "CardGroup">
+        <Card
+          title="Working at the NYTimes"
+          text="The moment of historic upheaval: Elections 2020 during pandemic"/>
+        <Card
+          title="Politics of Design"
+          text="Everything must come from one piece. The object has been waiting"/>
+        <Card
+          title="The Future of Fashion"
+          text="Can the groundbreaking future be organic embracing the nature?"/>
+        <Card
+          title="Reasonable Minds Differ"
+          text="What's at stake of law, technology, and human rights?"/>
+        <Card
+          title="Stuck at US-Mexico Border"
+          text="What do you have to sacrifice for truth?"/>
+        <Card
+          title="Alone in Chicago"
+          text="What they will never tell about Chicago"/>
+        <Card
+          title="Theatrical Spotlight"
+          text="I had to kiss a guy on stage for the play. The show must go on."/>
+        <Card
+          title="Music School is Hard"
+          text="No, you don't want to go to the music school."/>
+        <Card
+          title="Nazi Concentration Camp"
+          text="A school trip to Germany I will never forget."/>
+        <Card
+          title="Black CEOs are the Best"
+          text="What I learned from my experience at a startup founded by two Blacks."/>
+        <Card
+          title="Usually It Snows in April"
+          text="My memories and life in a boarding high school in New Hampshire."/>
+        <Card
+          title="The Subway Song"
+          text="My relationship with Soviet subways in my hometown."/>
+        <Card
+          title="Self-Declining Race"
+          text="I never feel Asian and probably won't, no matter how much I try."/>
+        <Card
+          title="Girl in Translation"
+          text="Some things are getting lost in translations. "/>
+        <Card
+          title="America is the Midwest"
+          text="Reflections on my time and job in Kansas City."/>
+        <Card
+          title="I lived with 12 families"
+          text="Absolutely different cultures, lifestyles, and values"/>
+        </div>
     </div>
   </div>
 )

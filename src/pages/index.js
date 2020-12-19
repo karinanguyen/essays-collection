@@ -7,19 +7,21 @@ import SEO from "../components/seo"
 import Card from "../components/Card"
 import Section from "../components/Section"
 //import Section from "..components/Section"
+import staticdata from "../../staticdata.json"
+import Cell from "../components/Cell"
 
 const IndexPage = () => (
   <div>
     <div className="Hero">
       <div className = "HeroGroup">
       <SEO title="Home" />
-      <h1>interface sémaphore</h1>
-      <p>this is the collection of essays by Karina Nguyen.</p>
+      <h1>with love, k.</h1>
+      <p> this is a collection of essays and opinion pieces on various topics by Karina N. </p>
        {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> 
        <Image />
         </div>*/}
       <Link to="https://www.karinanguyen.co/"><button>Learn my work</button></Link>
-      <svg width="100%" height="182" viewBox="0 0 2560 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="100%" height="160" viewBox="0 0 2560 172" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill="black">
           <animate repeatCount="indefinite" fill="freeze" 
           attributeName="d" dur="10s" 
@@ -86,13 +88,18 @@ const IndexPage = () => (
           title="I lived with 12 families"
           text="Absolutely different cultures, lifestyles, and values"/>
         </div>
+        {staticdata.cells.map(cell =>(
+          <Cell
+            title={cell.title}
+          />
+        ))}
     </div>
-    <Section
+    {/* <Section
       image ={require('../images/white.png')}
       logo = {require('../images/logo.png')}
       title = "Illustrations"
       text = "This is the collection of illustrations"
-    />
+    /> */}
 
   </div>
 )

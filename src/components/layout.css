@@ -13,18 +13,21 @@ a {
 }
 
 .Hero{ 
-  height: 650px;
+  height: 610px;
 } 
 
 .HeroGroup{
-  margin: 10 auto;
+  /* margin: 10 auto; */
   /* max-width: 500px;  */
   padding: 180px 80px; 
 }
 
 p{
   line-height: 2.5;
+  color: grey; 
 }
+
+
 
 .Hero button{ 
   line-height: 2.5;
@@ -32,7 +35,7 @@ p{
   outline: none;
   font-weight: 600;
   font-size: 20px; 
-  color: black; 
+  color:rgb(37, 34, 34); 
   background: rgba(243, 238, 238, 0.7); 
   padding: 0px 20px; 
   transition: 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -62,14 +65,12 @@ p{
     font-size: 20px; 
   }
 } */
-.Cards {
 
-}
 .CardGroup {
-  margin: 10px 70px 70px;
+  margin: 10px 70px 60px;
   display: grid; 
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 36px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
   justify-items: left;
 }
 
